@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Documentation</title>
+</head>
+<body>
+  <div>
+        <h1>Text-Saver</h1>
+        <p>This is a text saving and retrieval web app built in Django. This app is able to save short text snippets with a title, timestamp and created user. The snippet can also have a tag. Implemented JWT authentication for getting user.</p>
+        <h2>Admin Credentials</h2>
+        <pre>
+          <span>username : admin</span>
+          <span>password : admin123</span>
+        </pre>
+        
+        <div>
+          <h1>API Details</h1>
+            <h2>Authentication API:</h2>
+            
+            <div style="padding-left:50px">
+                <h3><a href="api/login">Login API</a></h3>
+                <code>POST /api/login</code>
+                
+                <h3><a href="api/refresh">Refresh API</a></h3>
+                <code>POST /api/refresh</code>
+            </div>
+
+        </div>
+    
+    <div></div>
+    
+    <div>
+        <h2>CRUD APIs:</h2>
+        <div style="padding-left:50px">
+        <h3><a href="api/snippets-overview">Overview API</a></h3>
+        <code>GET /api/snippets-overview</code>
+        
+        <h3><a href="api/snippets-create">Create API</a></h3>
+        <p>(Need to Authenticate)</p>
+        <code>POST /api/snippets-create</code>
+        
+        <h3><a href="api/snippets-details/0">Detail API</a></h3>
+        <code>GET /api/snippets-details/&lt;snippet_id&gt;</code>
+
+        <h3><a href="api/snippets-update/0">Update API</a></h3>
+        <code>PUT /api/snippets-update/&lt;snippet_id&gt;</code>
+        
+        <h3><a href="api/snippets-delete/0">Delete API</a></h3>
+        <code>DELETE /api/snippets-delete/&lt;snippet_id&gt;</code>
+        
+        <h3><a href="api/tag-list/">Tag List API</a></h3>
+        <code>GET /api/tag-list/</code>
+        
+        <h3><a href="api/tag-details/0">Tag Detail API</a></h3>
+        <code>GET /api/tag-details/&lt;tag_id&gt;</code>
+    </div>
+      
+</div>
+
+</div>
+</body>
+</html>
+
+<style>
+  
+  code {
+    font-family: Consolas, monospace;
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+
+</style>
