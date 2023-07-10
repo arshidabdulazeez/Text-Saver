@@ -13,8 +13,8 @@ Follow these steps to install the app.
 
  3. Restore the Database
 
-        docker cp db.sql snippets-saving-postgres:/db.sql
-        docker exec -i snippets-saving-postgres psql -U postgres -d snippets < db.sql
+        docker cp new.sql snippets-saving-postgres:/new.sql
+        docker exec -i snippets-saving-postgres psql -U postgres -d snippets < new.sql
 
 
 ##### Admin Credentials
